@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "RESTAPI-ASSIGNMENT",
+    "dateExported": "2023-11-21T17:15:22.764Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5aa6f3ee-0ce9-44fd-a471-1997cc5c3146",
+            "colId": "661924e5-726c-4d2c-b116-804282830e20",
+            "containerId": "",
+            "name": "ADD BOOK - RESTAPI",
+            "url": "localhost:5001/addBook",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-21T17:14:31.718Z",
+            "modified": "2023-11-21T17:14:31.718Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZWFzYWF3YW43QGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4NjU3MywiZXhwIjoyMzA1Mzg2NTczfQ.yf8z7ssU5-ez5AiYlHNAutStU438kPw6PR5Kks_8MjM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Harry Potter and the Prisoner of Azkaban\",\n    \"author\": \"J.K. Rowling\",\n    \"publisher\": \"Bloomsbury\",\n    \"genre\": \"Fantasy\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2af9e00d-ebc7-4c3d-b12f-b2d442966095",
+            "colId": "661924e5-726c-4d2c-b116-804282830e20",
+            "containerId": "",
+            "name": "ADD BOOK - RESTAPI",
+            "url": "localhost:5001/addBook",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-21T17:14:38.840Z",
+            "modified": "2023-11-21T17:14:38.840Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZWFzYWF3YW43QGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4NjU3MywiZXhwIjoyMzA1Mzg2NTczfQ.yf8z7ssU5-ez5AiYlHNAutStU438kPw6PR5Kks_8MjM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Harry Potter and the Prisoner of Azkaban\",\n    \"author\": \"J.K. Rowling\",\n    \"publisher\": \"Bloomsbury\",\n    \"genre\": \"Fantasy\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2bcbbc96-fa97-482d-acdf-b45f6be8a89a",
+            "colId": "661924e5-726c-4d2c-b116-804282830e20",
+            "containerId": "",
+            "name": "REGISTER - RESTAPI",
+            "url": "localhost:5001/registerUser",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-21T17:14:44.737Z",
+            "modified": "2023-11-21T17:14:44.737Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" : \"aleasaawan5@gmail.com\",\n  \"password\" : \"Password5\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
