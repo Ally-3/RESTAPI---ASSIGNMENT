@@ -1,4 +1,5 @@
 const User = require("../models/usermodel");
+const Book = require("../models/bookmodel");
 const jwt = require("jsonwebtoken");
 
 //REGISTER
@@ -21,11 +22,7 @@ async function register(req, res) {
             details : UserResponse, 
             token : token
         })
-        // const UserResponse = await User.create(req.body);
-        // res.status(201).json({
-        //     message : "user successfully added",
-        //     details : UserResponse
-        // })
+
     } catch (error) {
         res.status(500).json({
             message : "unable to register user", 
@@ -51,7 +48,34 @@ async function login(req, res) {
     }
 }
 
+//GET - books linked to user
+async function booksLinkedToUser (req, res){
+    try {
+        const findUser = req.body.email;
+        const user = await User.findOne({
+            where: { email: findUser }
+        });
+        
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        
+        const books = await Book.findAll({
+            where: { UserId: user.id }
+        });
+        
+        res.status(200).json(books);
+    
+    } catch (error) {
+        res.status(501).json({ 
+            message: error.message, 
+            error: error
+        });
+    }
+}
+
 module.exports = {
     register,
-    login
+    login,
+    booksLinkedToUser
 }

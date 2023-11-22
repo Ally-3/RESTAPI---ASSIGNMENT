@@ -1,6 +1,5 @@
 const bcrypt = require("bcrypt");
 const User = require("../models/usermodel");
-const Book = require("../models/bookmodel");
 const jwt = require("jsonwebtoken");
 
 const saltRounds = 10;

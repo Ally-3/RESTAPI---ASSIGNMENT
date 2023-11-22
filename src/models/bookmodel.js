@@ -15,7 +15,7 @@ const Book = SQLconnection.define("Book", {
   },
   genre: {
     type: DataTypes.STRING
-  }
+  },
 });
 
 module.exports = Book;

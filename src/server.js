@@ -9,6 +9,8 @@ const Book = require("../src/models/bookmodel");
 const bookRouter = require("../src/routes/bookroutes");
 
 function syncTables() {
+    User.hasMany(Book)
+    Book.belongsTo(User, { foreignKey: 'userID' })
     User.sync({ alter : true })
     Book.sync({ alter : true })
 }
