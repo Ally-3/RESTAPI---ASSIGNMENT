@@ -70,7 +70,7 @@ async function tokenCheck(req, res, next) {
         const emailID = decodedToken.email; 
 
         if (!emailID) {
-            throw new Error("unable to add book"); 
+            throw new Error("unable to add book/view books to user"); 
         } else {
             req.body.email = emailID;
             next();

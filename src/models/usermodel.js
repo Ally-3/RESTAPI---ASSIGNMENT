@@ -2,10 +2,6 @@ const { DataTypes } = require("sequelize");
 const SQLconnection = require("../db/connection");
 
 const User = SQLconnection.define("User", {
-    userID : {
-        type : DataTypes.INTEGER,
-        allowNull : true
-    },
     email : {
         type : DataTypes.STRING,
         unique : true,
@@ -18,6 +14,9 @@ const User = SQLconnection.define("User", {
         type : DataTypes.STRING,
         allowNull : false,
     },
+    userID: {
+        type: DataTypes.INTEGER
+      }
 });
 
 module.exports = User;

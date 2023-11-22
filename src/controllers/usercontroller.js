@@ -48,7 +48,7 @@ async function login(req, res) {
     }
 }
 
-//GET - books linked to user
+//GET - books linked to user, find a user by email and retrieve all books associated with that user
 async function booksLinkedToUser (req, res){
     try {
         const findUser = req.body.email;

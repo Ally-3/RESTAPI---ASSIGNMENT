@@ -10,7 +10,7 @@ const bookRouter = require("../src/routes/bookroutes");
 
 function syncTables() {
     User.hasMany(Book)
-    Book.belongsTo(User, { foreignKey: 'userID' })
+    Book.belongsTo(User)
     User.sync({ alter : true })
     Book.sync({ alter : true })
 }
