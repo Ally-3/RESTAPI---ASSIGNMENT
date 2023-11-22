@@ -48,6 +48,19 @@ async function login(req, res) {
     }
 }
 
+// READ USERS - GET - list all users
+async function listAllUsers (req, res){
+    try {
+        const listOfSUsers = await User.findAll();
+        res.status(200).json(listOfSUsers);
+    } catch (error) {
+        res.status(501).json({ 
+            message: error.message, 
+            error: error
+        })
+    }
+}
+
 //GET - books linked to user, find a user by email and retrieve all books associated with that user
 async function booksLinkedToUser (req, res){
     try {
@@ -77,5 +90,6 @@ async function booksLinkedToUser (req, res){
 module.exports = {
     register,
     login,
+    listAllUsers,
     booksLinkedToUser
 }
