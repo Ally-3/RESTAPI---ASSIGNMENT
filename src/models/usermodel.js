@@ -15,7 +15,9 @@ const User = SQLconnection.define("User", {
         allowNull : false,
     },
     userID: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
       }
 });
 
