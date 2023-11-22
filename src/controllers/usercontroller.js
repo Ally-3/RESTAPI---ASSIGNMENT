@@ -3,6 +3,7 @@ const Book = require("../models/bookmodel");
 const jwt = require("jsonwebtoken");
 
 //REGISTER
+//TOKEN ACQUIRED
 async function register(req, res) {
     try {
         const UserResponse = await User.create(req.body);
@@ -61,7 +62,9 @@ async function listAllUsers (req, res){
     }
 }
 
-//GET - books linked to user, find a user by email and retrieve all books associated with that user
+//GET - books linked to user, 
+// (1) finds a user by email, then
+// (2) retrieves all books associated with that user
 async function booksLinkedToUser (req, res){
     try {
         const findUser = req.body.email;
@@ -87,6 +90,7 @@ async function booksLinkedToUser (req, res){
     }
 }
 
+//EXPORTS
 module.exports = {
     register,
     login,

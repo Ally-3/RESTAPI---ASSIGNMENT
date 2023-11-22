@@ -60,10 +60,13 @@ async function comparePassword(req, res, next) {
 }
 
 // FUNCTION TO CHECK TOKEN
+// 'const token' requires token to be added to authorization
+// '.replace' removes bearer from the start of the line
+// compares email with token and secretKey
 async function tokenCheck(req, res, next) {
     try {
         const secretKey = process.env.JWTPASSWORD; 
-        const token = req.header("Authorization").replace("Bearer ", ""); 
+        const token = req.header("Authorization").replace("Bearer ", " "); 
         const decodedToken = jwt.verify(token, secretKey);
         console.log(decodedToken);
 

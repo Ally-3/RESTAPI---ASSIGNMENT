@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "RESTAPI-ASSIGNMENT",
-    "dateExported": "2023-11-22T14:26:41.176Z",
+    "dateExported": "2023-11-22T15:59:34.007Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,17 +14,17 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2023-11-21T17:14:31.718Z",
-            "modified": "2023-11-22T14:23:44.007Z",
+            "modified": "2023-11-22T15:00:36.069Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZWFzYWF3YW4yQGdtYWlsLmNvbSIsImlhdCI6MTcwMDY2MjIxNSwiZXhwIjoyMzA1NDYyMjE1fQ.dTKD46AxY71vqHNWWd0fugc-BsdZnRW5MjSb5Ibpy6o"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZWFzYWF3YW4yQGdtYWlsLmNvbSIsImlhdCI6MTcwMDY2MjIxNSwiZXhwIjoyMzA1NDYyMjE1fQ.dTKD46AxY71vqHNWWd0fugc-BsdZnRW5MjSb5Ibpy6o"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"title\": \"The One Hundred-Year-Old Man Who Climbed Out the Window and Disappeared\",\n    \"author\": \"Jonas Jonasson\",\n    \"publisher\": \"Hyperion\",\n    \"genre\": \"Fiction\"\n}",
+                "raw": "{\n    \"title\": \"Eleanor Oliphant Is Completely Fine\",\n    \"author\": \"Gail Honeyman\",\n    \"publisher\": \"Penguin Books\",\n    \"genre\": \"Fiction\"\n}",
                 "form": []
             },
             "tests": []
@@ -58,11 +58,25 @@
             "colId": "661924e5-726c-4d2c-b116-804282830e20",
             "containerId": "",
             "name": "READ ALL BOOKS",
-            "url": "http://localhost:5001/listallbooks",
+            "url": "http://localhost:5001/listAllUsers",
             "method": "GET",
             "sortNum": 25000,
             "created": "2023-11-22T11:04:50.617Z",
-            "modified": "2023-11-22T14:17:36.675Z",
+            "modified": "2023-11-22T14:45:36.105Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3ad9d4b9-d98f-4ed1-a763-c6157350a78f",
+            "colId": "661924e5-726c-4d2c-b116-804282830e20",
+            "containerId": "",
+            "name": "READ ALL USERS",
+            "url": "http://localhost:5001/listallbooks",
+            "method": "GET",
+            "sortNum": 32500,
+            "created": "2023-11-22T14:45:01.981Z",
+            "modified": "2023-11-22T14:45:01.981Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -139,11 +153,11 @@
             "method": "GET",
             "sortNum": 60000,
             "created": "2023-11-22T11:06:43.618Z",
-            "modified": "2023-11-22T14:21:29.462Z",
+            "modified": "2023-11-22T14:59:54.251Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZWFzYWF3YW4yQGdtYWlsLmNvbSIsImlhdCI6MTcwMDY2MjIxNSwiZXhwIjoyMzA1NDYyMjE1fQ.dTKD46AxY71vqHNWWd0fugc-BsdZnRW5MjSb5Ibpy6o"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZWFzYWF3YW4yQGdtYWlsLmNvbSIsImlhdCI6MTcwMDY2MjIxNSwiZXhwIjoyMzA1NDYyMjE1fQ.dTKD46AxY71vqHNWWd0fugc-BsdZnRW5MjSb5Ibpy6o"
                 }
             ],
             "params": [],
