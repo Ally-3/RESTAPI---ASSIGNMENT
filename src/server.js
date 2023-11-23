@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
 const User = require("../src/models/usermodel");
@@ -17,6 +18,7 @@ function syncTables() {
 
 const port = process.env.PORT || 5002
 
+app.use(cors());
 app.use(express.json());
 app.use(userRouter, bookRouter);
 
